@@ -10,7 +10,7 @@
     --color-light: #eaeaea;
     --color-white: #fff;
     --color-card: #50727B;
-    --color-preto: black;
+    --color-preto: #000;
 }
 
 html{
@@ -21,37 +21,6 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif   
 }
 
-/* header{
-    background-color: var(--color-primary);
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-
-}
-
-nav ul{
-    list-style: none;
-    text-align: center;
-}
-
-nav li, a {
-    display: inline;
-    margin: 0 2rem;
-}
-
-nav a {
-    color: var(--color-white);
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1rem;
-} */
-
-/*  nav img {
-    
-    width: 200px;
-    height: 7%;
-    
-} */
 
 header {
     background-color: var(--color-primary);
@@ -257,16 +226,35 @@ nav a {
     object-fit: cover; 
 }
 
+#redeSocial{
+    background-color: var(--color-card);
+    font-size: 2rem;
+    color: var(--color-preto);
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+    align-items: center;
+
+
+}
+
+#redes img {
+    margin: 10px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    height: 4%;
+    width: 4%;
+}
 
 #contatosFinal{
     margin: 0;
     padding: 20px;
-    background-color: var(--color-card);
-    color: var(--color-preto);
+    background-color: var(--color-preto);
+    color: var(--color-light);
 }
 
 #contatosFinal h2 {
-    color: var(--color-preto);
+    color: var(--color-light);
     text-align: center;
     font-size: 2rem;
     margin: 0.5rem;
@@ -282,7 +270,7 @@ nav a {
 
 #contatosFinal a {
     text-decoration: none;
-    color: var(--color-preto);
+    color: var(--color-light);
 }
 
 
@@ -306,4 +294,18 @@ footer{
     padding: 1rem;
     text-align: center;
     font-size: 1.2rem;
+}
+
+#regioes {
+    font-size: 2rem;
+    background-color: var(--color-primary);
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+    align-items: center;
+}
+
+.maps {
+    margin: 2rem 0;
+    padding: 2rem;
 }
