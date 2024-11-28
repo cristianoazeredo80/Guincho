@@ -213,6 +213,7 @@ nav a {
     overflow: hidden;
     transition: transform 0.3s ease;
     height: 250px;
+    margin-bottom: 2rem;
 }
 
 .cardGuincho:hover {
@@ -277,7 +278,7 @@ nav a {
 address{
     margin: 1rem;
     text-align: center;
-    font-size: x-large;
+    font-size: 1rem;
     
     
 }
@@ -293,19 +294,130 @@ footer{
     color: var(--color-white);
     padding: 1rem;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 #regioes {
     font-size: 2rem;
-    background-color: var(--color-primary);
-    margin: 0;
-    padding: 0.5rem;
     text-align: center;
     align-items: center;
+    background-color: var(--color-primary);
+    padding: 0.5rem;
+
 }
 
-.maps {
-    margin: 2rem 0;
-    padding: 2rem;
+#maps {
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+
+/* Responsivel */
+
+@media screen and (max-width: 1200px) {
+    
+    nav ul {
+        gap: 5rem;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cardGuincho {
+        flex: 1 1 calc(50% - 32px);
+        max-width: calc(50% - 32px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .logoHeader {
+        height: 100px;
+    }
+
+    .guincho24 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .reboque {
+        font-size: 25px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .cards-info {
+        margin: 1rem;
+        padding: 2rem;
+    }
+
+    .sobreNos img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .cardGuincho {
+        flex: 1 1 100%;
+        max-width: 100%;
+        height: 200px;
+    }
+
+    #redes img {
+        margin-left: 20px;
+        height: 8%;
+        width: 8%;
+    }
+
+    #maps iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .guincho24 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .reboque {
+        font-size: 20px;
+    }
+
+    .sobreNos > p {
+        font-size: 1.2rem;
+    }
+
+    address > * {
+        display: block;
+        margin: 1rem 0;
+        text-align: center;
+    }
+}
+
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    min-width: 320px;
 }
